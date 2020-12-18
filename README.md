@@ -6,6 +6,8 @@
 
 The purpose of this project is to use a convolutional neural network (CNN) to predict dog breeds. The pipeline is the evaluation of an image as a dog or a human, then a prediction of which dog breed the dog is, or which dog breed the human most resembles. 
 
+How I proceeded exactly and what results I achieved can be read in my blog post: (LINK)
+
 
 ## Table of Contents
 1. [Introduction](#introduction)
