@@ -2,7 +2,7 @@
 # Data Scientist Nanodegree: Capstone Project
 
 
-![dog_breed_main_pic](images/dog_breed_main_pic.png)
+![dog_breed_main_pic](images/dog_breed_main_pic.jpg)
 
 The purpose of this project is to use a convolutional neural network (CNN) to predict dog breeds. The pipeline is the evaluation of an image as a dog or a human, then a prediction of which dog breed the dog is, or which dog breed the human most resembles. 
 
