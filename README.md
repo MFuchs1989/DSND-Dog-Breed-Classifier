@@ -17,9 +17,10 @@ How I proceeded exactly and what results I achieved can be read in my blog post:
 5. [Running APP](#running_app)
     1. [Detect Humans Face](#detect_humans_face)
     2. [Classify Dog Breeds](#classify_dog_breeds)
-XX. [Authors](#authors)
-XX. [Project Motivation](#motivation)
-XX. [Acknowledgements](#acknowledgement)
+6. [Project Results](#project_results)    
+7. [Authors](#authors)
+8. [Project Motivation](#motivation)
+9. [Acknowledgements](#acknowledgement)
 
 
 
@@ -130,6 +131,7 @@ I used transfer learning to create a convolutional neural network (CNN). I used 
 + If a dog is recognised in the image supplied, the algorithm returns the corresponding breed:
 
 ![pic_readme2](images/pic_readme2.png)
+
 ![pic_readme3](images/pic_readme3.png)
 
 + If a human is recognised in the image provided, the algorithm returns the resembling dog breed:
@@ -139,7 +141,15 @@ I used transfer learning to create a convolutional neural network (CNN). I used 
 
 + If neither a human nor a dog can be seen in the picture, the algorithm returns the following error message: "Error: Please input an image of a human or a dog."
 
+<a name="project_results"></a>
 
+## Project Results
+
+In summary, the CNN model I created with transfer learning far surpassed the CNN created from scratch in terms of performance. 
+The accuracy of the InceptionV3-model (pre-trained on ImageNet) reached 68% while the CNN from scratch was about 5%.
+The ImageNet dataset contains more than one million training images on which the InceptionV3 model was trained. This results in an extreme increase in performance compared to CNN from scratch. 
+The accuracy of 5% could possibly have been increased again if data augmentation had been used in the model training.
+When tested on new images, the CNN model with transfer learning performed as I expected, not perfect but good enough. 
 
 <a name="authors"></a>
 
