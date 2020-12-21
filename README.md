@@ -14,7 +14,9 @@ How I proceeded exactly and what results I achieved can be read in my blog post:
 2. [Software Requirements](#software_requirements)
 3. [Folder Structure](#folder_structure)
 4. [Getting Started](#getting_started)
-
+5. [Running APP](#running_app)
+    1. [Detect Humans Face](#detect_humans_face)
+    2. [Classify Dog Breeds](#classify_dog_breeds)
 XX. [Authors](#authors)
 XX. [Project Motivation](#motivation)
 XX. [Acknowledgements](#acknowledgement)
@@ -34,14 +36,14 @@ In the course of this nanodegree from Udacity, as part of the Capstone project, 
 
 Required libraries:
 
-+ sklearn==0.23.2
-+ keras==2.4.3
-+ tensorflow==2.4.0
-+ numpy==1.19.2
-+ pandas==1.1.3
-+ matplotlib==3.0.3
-+ opencv==3.0.3
-+ tqdm==4.52.0
++ Python 3.x
++ Scikit-Learn
++ Keras
++ TensorFlow
++ Numpy
++ Pandas
++ Matplotlib
++ OpenCV
 
 Please run ```pip install -r requirements.txt```
 
@@ -93,7 +95,7 @@ C:.
 
 ## Getting Started
 
-1. Make sure Python 3 is installed
+1. Make sure Python 3 is installed.
 2. Clone the repository and navigate to the project's root directory in the terminal
 3. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip the folder and place the three files (test, train and valid) in the cloned repository in the folder ```data/dog_images```. If one of these folders does not yet exist, please create it manually. 
 4. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip). Unzip the folder and place it in the cloned repository in the folder ```data/lfw```. If one of these folders does not yet exist, please create it manually. 
@@ -101,6 +103,41 @@ C:.
 6. Start the notebook ```dog_app.ipynb```.
 
 
+
+<a name="running_app"></a>
+
+## Running APP
+
+
+
+## Running APP
+
+<a name="detect_humans_face"></a>
+
+### Detect Humans Face
+
+I used OpenCV's implementation of [Haar feature-based cascade classifiers](https://docs.opencv.org/master/d7/d8b/tutorial_py_face_detection.html) to detect human faces in images.
+
+![pic_readme1](images/pic_readme1.png)
+
+
+<a name="classify_dog_breeds"></a>
+
+### Classify Dog Breeds
+
+I used transfer learning to create a convolutional neural network (CNN). I used this to determine the breed of dog from dog pictures. 
+
++ If a dog is recognised in the image supplied, the algorithm returns the corresponding breed:
+
+![pic_readme2](images/pic_readme2.png)
+![pic_readme3](images/pic_readme3.png)
+
++ If a human is recognised in the image provided, the algorithm returns the resembling dog breed:
+
+![pic_readme4](images/pic_readme4.png)
+
+
++ If neither a human nor a dog can be seen in the picture, the algorithm returns the following error message: "Error: Please input an image of a human or a dog."
 
 
 
