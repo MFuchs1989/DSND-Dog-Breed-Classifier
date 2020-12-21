@@ -13,7 +13,7 @@ How I proceeded exactly and what results I achieved can be read in my blog post:
 1. [Introduction](#introduction)
 2. [Software Requirements](#software_requirements)
 3. [Folder Structure](#folder_structure)
-3. [Project Instructions](#project_instructions)
+4. [Getting Started](#getting_started)
 
 XX. [Authors](#authors)
 XX. [Project Motivation](#motivation)
@@ -44,9 +44,6 @@ Required libraries:
 + tqdm==4.52.0
 
 Please run ```pip install -r requirements.txt```
-
-
-
 
 
 
@@ -92,13 +89,16 @@ C:.
 ```
 
 
+<a name="getting_started"></a>
 
+## Getting Started
 
-
-
-<a name="project_instructions"></a>
-
-## Project Instructions
+1. Make sure Python 3 is installed
+2. Clone the repository and navigate to the project's root directory in the terminal
+3. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip the folder and place the three files (test, train and valid) in the cloned repository in the folder ```data/dog_images```. If one of these folders does not yet exist, please create it manually. 
+4. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip). Unzip the folder and place it in the cloned repository in the folder ```data/lfw```. If one of these folders does not yet exist, please create it manually. 
+5. Download the VGG-16 and InceptionV3 bottleneck features and place them in the cloned repository in the folder ```bottleneck_features```. If this folder does not yet exist, please create it manually. 
+6. Start the notebook ```dog_app.ipynb```.
 
 
 
