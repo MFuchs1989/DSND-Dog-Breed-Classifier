@@ -29,7 +29,7 @@ How I proceeded exactly and what results I achieved can be read in my blog post:
 
 ## Introduction
 
-In the course of this nanodegree from Udacity, as part of the Capstone project, I created a pipeline that can be used in a web or mobile app to process real images taken by users. Based on a picture of a dog, the algorithm I created can make an assessment about the dog breed. If supplied an image of a human, the code will identify the resembling dog breed.
+In the course of this nanodegree from Udacity, as part of the Capstone Project, I created a pipeline that can be used in a web or mobile app to process real images taken by users. Based on a picture of a dog, the algorithm I created can make an assessment about the dog breed. If supplied an image of a human, the code will identify the resembling dog breed.
 
 <a name="software_requirements"></a>
 
@@ -146,7 +146,7 @@ I used transfer learning to create a convolutional neural network (CNN). I used 
 ## Project Results
 
 In summary, the CNN model I created with transfer learning far surpassed the CNN created from scratch in terms of performance. 
-The accuracy of the InceptionV3-model (pre-trained on ImageNet) reached 68% while the CNN from scratch was about 5%.
+The accuracy of the InceptionV3-model (pre-trained on ImageNet) reached 79.55% while the CNN from scratch was about 5%.
 The ImageNet dataset contains more than one million training images on which the InceptionV3 model was trained. This results in an extreme increase in performance compared to CNN from scratch. 
 The accuracy of 5% could possibly have been increased again if data augmentation had been used in the model training.
 When tested on new images, the CNN model with transfer learning performed as I expected, not perfect but good enough. 
