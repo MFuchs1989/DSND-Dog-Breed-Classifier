@@ -110,9 +110,6 @@ C:.
 ## Running APP
 
 
-
-## Running APP
-
 <a name="detect_humans_face"></a>
 
 ### Detect Humans Face
